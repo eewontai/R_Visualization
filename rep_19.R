@@ -4,7 +4,7 @@ install.packages("ggplot2")  # data visulization package
 library("readxl")   # declare that we use the package
 library("ggplot2")
 
-setwd("Y:/Allgemein/Cho/Eewon/R_visualization/Boxplot_exercise")   # set working directory
+setwd("L:/MBT/Austausch/Cho/Eewon/R_visualization/Boxplot_exercise")   # set working directory
 getwd()
 
 rep_19 = read_excel('rep_19.output.xlsx')
@@ -15,9 +15,6 @@ box_plot <- ggplot(rep_19, aes(x = 1, y = length))
 # Add the geometric object box plot
 box_plot +
   geom_boxplot()
-
-#box_plot +
-#  geom_violin(scale = "area")
 
 ## Data + coordinate system + geom = boxplot
 ## geom: visual marks that represent data points
